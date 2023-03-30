@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{    
+    background-color: black;
+    color: whitesmoke;
+}
+
+#nav{
+    height: 15%;
+    width: 100%;
+    padding: 10px 10px;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: black;
+
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+#nav li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin: 10px 20px;
+}
+
+#nav li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -5px;
+    left: 0px;
+    background-color: gold;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#nav li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#nav li a{
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+#nav #logo{
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*-------nav end-----*/
+
+.container{
+    width: 95%;
+    height: 30vh;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 5%;
+    padding-left: 5%;
+    border-left: 1.5vw gold solid; 
+}
+
+#intro{
+    height: 30vw;
+    margin-top: 150px;
+}
+
+#intro h1{
+    font-size: 5.2vw;
+    font-weight: bold;
+}
+
+.high_light{
+    color: gold;
+}
+
+#intro p{
+    color: gray;
+    font-size: 2vw;
+    font-weight:bolder;
+    margin-top: 30px;
+}
+
+/*------intro end--------*/
+
+#about{
+    height: 50vh;
+}
+
+#about h2{
+    font-size: 4.5vw;
+}
