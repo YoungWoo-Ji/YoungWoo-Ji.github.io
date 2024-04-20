@@ -1,50 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-    <link rel="icon" href="img/fabicon.ico" type="image/x-icon" >      
-    <link rel="stylesheet" href="style/style.css">
-    <title>YoungWoo Ji's portfolio website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YoungWooJi</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "ubuntu";
+      background-color: #342E37;
+    }
+
+    form button{
+      border: #E3B23C 3px solid; 
+      background-color:#342E37; 
+      color: #E3B23C;
+    }
+    
+    form button:hover{
+      background-color: #E3B23C;
+      color: #342E37;
+    }
+
+    #intro a{
+      position: relative;
+    }
+
+    #intro a:after{
+      content: '';
+      width: 100%;
+      position: absolute;
+      height: 6px;
+      transform: scaleX(0);
+      left: 0px;
+      bottom: -7px;
+      transform-origin: bottom right;
+      background-color: #E3B23C;
+      transition: transform 0.25s ease-out;
+    }
+
+    #intro a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
+  </style>
 </head>
-<body>      
-    <div id="nav">
-        <div id="logo">
-            YoungWoo Ji
+<body>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+  <section id="intro">
+      <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-evenly p-0">  
+        <div class="row text-white w-100">
+          <div class="col-xl-7 ps-5">
+            <h1>
+              <div class="fw-bold mb-3">Hi everyone</div>
+              <div class="display-2 fw-bold mb-3">I<span style="color:#E3B23C;">'</span>m YoungWoo Ji</div>
+              <div class="display-2 fw-bold mb-3">I<span style="color:#E3B23C;">'</span>m <span style="color:#E3B23C;">Web Developer</span></div>
+            </h1>
+          </div>
+          <div class="col-xl-1 ps-xl-0 ps-5 pb-4 pt-3">
+            <div class="d-none d-xl-block w-50 h-100" style="border-right: 10px solid #E3B23C;"></div>
+            <div class="d-block d-xl-none w-75" style="height: 5px;background-color: #E3B23C;"></div>
+          </div>
+          <div class="col-xl-4 ps-xl-0 ps-5">
+            <h1 class="fw-bold h-100">
+              <a href="#about" class="text-decoration-none text-white mb-xl-5">About</a><div class="d-none d-xl-block" style="height: 20%;"></div>
+              <a href="#skills" class="text-decoration-none text-white mb-xl-5">Skills</a><div class="d-none d-xl-block" style="height: 20%;"></div>
+              <a href="#contact" class="text-decoration-none text-white mb-xl-5">Contact</a><div class="d-none d-xl-block" style="height: 20%;"></div>
+            </h1>
+          </div>
+        </div>       
+      </div> 
+  </section>
+
+  <main>
+    <section id="about" style="background-color: #E3B23C;">
+      <div class="container-fluid min-vh-100">
+        <h1 class="display-1 fw-bold p-5" style="color: #342E37;">About</h1>
+        <div class="lead p-5 text-center text-md-start fw-bold" style="color: #342E37;">
+          <p>
+            Hello! I'm Jiyoung Woo, a web development enthusiast. I enjoy enhancing my skills and learning new things through various projects and experiences. I primarily work with JavaScript and Python and am proficient in frameworks like Express.js and Bootstrap.
+            <br><br>
+            I've been interested in web development since I was young. I first encountered HTML during elementary school classes, which sparked my desire to study web design and create my own websites. In middle school, I participated in a web development club with friends, where I became more proficient in HTML, CSS, and JS. This experience led me to be admitted to the Seoul Education University Software Gifted Academy, where I received high-quality education. Currently, I'm a member of the high school programming club, where I'm improving my skills through various projects.
+            <br><br>
+            My goal is to acquire professional knowledge through a computer science major and become a skilled programmer, providing innovative and user-friendly web services. I enjoy the process of growth and learning and am open to new challenges. Please join me in this journey of growth and learning!
+          </p>
         </div>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </div>
-    <div id="intro" class="container">
-        <h1 id="Home">
-            👋 Hi, I'm YoungWoo Ji<br>
-            I'm <span class="high_light">Web Designer</span>
-        </h1>
-        <p>
-            I am a front-end developer who optimize web design and user experience,<br>
-            and develop websites to meet user requirements.<br>
-            As a passionate and diligent developer, I always strive to learn and grow.
-        </p>
-    </div>
-    <div id="about" class="container">
-        <h2 id="About">About ME</h2>
-        <p></p>
-    </div>
-    <div id="skills" class="container">
-        <h2 id="Skills">Skills</h2>
-        <p></p>
-    </div>
-    <div id="contact" class="container">
-        <h2 id="Contact">Contact ME</h2>
-        <p></p>
-    </div>
+      </div>
+    </section>
+
+    <section id="skills" class="min-vh-100 ps-5 pt-5">
+      <h1 class="display-1 mb-5 fw-bold" style="color:#E3B23C;">Skills</h1>
+
+      <h1 class="text-white fw-bold mb-4">Languages</h1>
+      <div class="text-black fw-bold d-flex flex-wrap align-items-start mb-4">
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="html_logo">
+          HTML
+        </div>
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="css_logo">
+          CSS
+        </div>
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png?20120221235433" alt="javascript_logo">
+          JavaScript
+        </div>
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/172px-Python-logo-notext.svg.png" alt="python_logo">
+          Python
+        </div>
+      </div>
+
+      <h1 class="text-white fw-bold mb-4">Frameworks</h1>
+      <div class="text-black fw-bold d-flex flex-wrap align-items-start mb-4">
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="bootstrap_logo">
+          Bootstrap
+        </div>
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-thumbnail.png" alt="expressjs_logo">
+          Express
+        </div>
+      </div>
+
+      <h1 class="text-white fw-bold mb-4">Others</h1>
+      <div class="text-black fw-bold d-flex flex-wrap align-items-start mb-5">
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" alt="mongodb_logo">
+          MongoDB
+        </div>
+        <div class="bg-light rounded me-4 h2 p-3 d-flex align-items-center justify-content-center">
+          <img style="height: 2rem;" class="me-2" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="expressjs_logo">
+          Git
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="min-vh-100 pt-5" style="background-color: #E3B23C;">
+      <h1 class="display-1 mb-4 fw-bold ps-5" style="color:#342E37;">Contact</h1>
+
+      <form class="m-auto p-4 mx-5 rounded h5" style="background-color: #342E37; color: #E3B23C;">
+        <div class="mb-3">  
+          <label class="form-label mb-2">Name</label>
+          <input type="text" class="form-control" style="color: #E3B23C; background-color: #342E37; border: 3px solid #E3B23C;">
+        </div>
+        <div class="mb-3">  
+          <label class="form-label mb-2">Email</label>
+          <input type="email" class="form-control" style="color: #E3B23C; background-color: #342E37; border: 3px solid #E3B23C;">
+        </div>
+        <div class="mb-3">  
+          <label class="form-label mb-2">Subject</label>
+          <input type="text" class="form-control" style="color: #E3B23C; background-color: #342E37; border: 3px solid #E3B23C;">
+        </div>
+        <div class="mb-3">  
+          <label class="form-label mb-2">Message</label>
+          <textarea class="form-control" style="color: #E3B23C; height: 150px; background-color: #342E37; border: 3px solid #E3B23C;"></textarea>
+        </div>
+        <button type="submit" class="rounded-pill fs-6 p-2 fw-bold px-3">Submit</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="text-center py-3 fw-bold" style="color: #E3B23C;">&copy; YoungWoo Ji 2024</div>
+  </footer>
+
 </body>
 </html>
